@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.adamerikdominik_etlap.HelloController">
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.adamerikdominik_etlap.ListEtlapController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
@@ -38,7 +38,7 @@
                   <children>
                      <HBox>
                         <children>
-                           <Spinner>
+                           <Spinner fx:id="szazalekNovelSpinner">
                               <opaqueInsets>
                                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                               </opaqueInsets>
@@ -48,7 +48,7 @@
                                  <Insets bottom="20.0" left="10.0" right="20.0" top="5.0" />
                               </HBox.margin>
                            </Label>
-                           <Button mnemonicParsing="false" text="Emelés" />
+                           <Button mnemonicParsing="false" onAction="#szazalekEmelButton" text="Emelés" />
                         </children>
                         <padding>
                            <Insets bottom="10.0" right="10.0" top="10.0" />
@@ -56,7 +56,7 @@
                      </HBox>
                      <HBox>
                         <children>
-                           <Spinner>
+                           <Spinner fx:id="osszegNovelSpinner">
                               <opaqueInsets>
                                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                               </opaqueInsets>
@@ -66,7 +66,7 @@
                                  <Insets bottom="20.0" left="10.0" right="20.0" top="5.0" />
                               </HBox.margin>
                            </Label>
-                           <Button mnemonicParsing="false" text="Emelés" />
+                           <Button mnemonicParsing="false" onAction="#arNovelButton" text="Emelés" />
                         </children>
                         <VBox.margin>
                            <Insets bottom="20.0" right="20.0" top="20.0" />
